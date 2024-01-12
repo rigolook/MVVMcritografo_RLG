@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "8eLYzEzF45D/nqokwiqF6luwUQbGQOArLZbPXD3sEjXYXK8AglLbALECkG0L4Ri4niCinHpnNuRldye6fDRTIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CD16\\Desktop\\CritografoMVVM_RLG\\CritografoMVVM_RLG\\CritografoMVVM_RLG.iOS\\CritografoMVVM_RLG.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CD16\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
