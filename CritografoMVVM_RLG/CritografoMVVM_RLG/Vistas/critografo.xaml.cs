@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CritografoMVVM_RLG.VistaModelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace CritografoMVVM_RLG.Vistas
         public critografo()
         {
             InitializeComponent();
+            BindingContext = new VMcritografo(Navigation);
         }
     }
 }

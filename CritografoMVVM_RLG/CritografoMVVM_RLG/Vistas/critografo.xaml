@@ -20,36 +20,39 @@
             </Frame>
 
             <Label Text="Nombre:" FontSize="15" FontAttributes="None" TextColor="White" Padding="30,20,0,0"/>
-            <Entry x:Name="entryName" TextColor="White" BackgroundColor="Transparent"  Margin="20,0,20,0" Placeholder="Nombre aqui" PlaceholderColor="#0f4"/>
+            <Entry Text="{Binding Nombre}" x:Name="entryName" TextColor="White" BackgroundColor="Transparent"  Margin="20,0,20,0" Placeholder="Nombre aqui" PlaceholderColor="#0f4"/>
 
             <Label Text="Genero:" FontSize="15" FontAttributes="None" TextColor="White" Padding="30,20,0,0"/>
             <Grid>
-                <RadioButton x:Name="hombre"  Content="Hombre" Grid.Column="0" Margin="15,5,0,0"/>
-                <RadioButton x:Name="mujer"  Content="Mujer" Grid.Column="1"/>
+                <RadioButton IsChecked="{Binding GeneroH}"
+                    x:Name="hombre"  Content="Hombre" Grid.Column="0" Margin="15,5,0,0"/>
+                <RadioButton IsChecked="{Binding GeneroM}"
+                    x:Name="mujer"  Content="Mujer" Grid.Column="1"/>
             </Grid>
             <Grid Margin="30,20,10,10">
-                <CheckBox x:Name="Feo" Grid.Column="0" Grid.Row="0" Color="Gold"/>
+                <CheckBox  x:Name="Feo" Grid.Column="0" Grid.Row="0" Color="Gold" IsChecked="{Binding Feo}"/>
                 <Label Text="Feo(a)" Margin="30,5,0,0" Grid.Column="0" Grid.Row="0" TextColor="White"/>
-                <CheckBox x:Name="Hermoso" Grid.Column="1" Grid.Row="1"/>
+                <CheckBox x:Name="Hermoso" Grid.Column="1" Grid.Row="1" IsChecked="{Binding Hermoso}"/>
                 <Label Text="Hermoso(a)" Margin="30,5,0,0" Grid.Column="1" Grid.Row="1" TextColor="White"/>
-                <CheckBox x:Name="alto" Grid.Column="0" Grid.Row="2" />
+                <CheckBox x:Name="alto" Grid.Column="0" Grid.Row="2" IsChecked="{Binding Alto}"/>
                 <Label Text="Alto(a)" Margin="30,5,0,0" Grid.Column="0" Grid.Row="2" TextColor="White"/>
-                <CheckBox x:Name="bajo" Grid.Column="1" Grid.Row="0"/>
+                <CheckBox x:Name="bajo" Grid.Column="1" Grid.Row="0" IsChecked="{Binding Bajo}"/>
                 <Label Text="Bajo(a)" Margin="30,5,0,0" Grid.Column="1" Grid.Row="0" TextColor="White"/>
-                <CheckBox x:Name="listo" Grid.Column="0"  Grid.Row="1"/>
+                <CheckBox x:Name="listo" Grid.Column="0"  Grid.Row="1" IsChecked="{Binding Listo}"/>
                 <Label Text="Listo(a)" Margin="30,5,0,0" Grid.Column="0"  Grid.Row="1" TextColor="White"/>
-                <CheckBox  x:Name="tonto" Grid.Column="1" Grid.Row="2"/>
+                <CheckBox  x:Name="tonto" Grid.Column="1" Grid.Row="2" IsChecked="{Binding Tonto}"/>
                 <Label Text="Tonto(a)" Margin="30,5,0,0" Grid.Column="1" Grid.Row="2" TextColor="White"/>
             </Grid>
             <Button x:Name="criticar"
             Text="CRITICAR" FontAttributes="Bold" 
                 FontSize="30" Padding="0,5,0,5" 
-                Margin="23,13,23,13" BorderColor="Black" BorderWidth="1" />
+                Margin="23,13,23,13" BorderColor="Black" BorderWidth="1"
+                    Command="{Binding criticacommand}"/>
             <Frame BackgroundColor="Black" BorderColor="White" Margin="25" >
                 <Editor TextColor="MediumVioletRed" Placeholder="Resultado" 
                     PlaceholderColor="DarkViolet" Background="white" Margin="20,0,20,120" 
                     AutoSize="TextChanges"
-                    x:Name="cuadro"/>
+                    x:Name="cuadro" Text="{Binding Critica}"/>
             </Frame>
         </StackLayout>
     </Grid>
